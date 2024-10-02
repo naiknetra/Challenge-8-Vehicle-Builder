@@ -254,13 +254,7 @@ class Cli {
         // TODO: push the motorbike to the vehicles array
         // TODO: set the selectedVehicleVin to the vin of the motorbike
         // TODO: perform actions on the motorbike
-        Cli.generateVin(), answers.color, answers.make, answers.model, parseInt(answers.year), parseInt(answers.weight), parseInt(answers.topSpeed), parseInt(answers.frontWheelDiamater), parseInt(answers.frontWheelBrand), parseInt(answers.rearWheelDiameter), parseInt(answers.rearWheelBrand), []);
-        // push the car to the vehicles array
-        this.vehicles.push(motorbike);
-        // set the selectedVehicleVin to the vin of the car
-        this.selectedVehicleVin = motorbike.vin;
-        // perform actions on the car
-        this.performActions();
+        
       });
   }
 
