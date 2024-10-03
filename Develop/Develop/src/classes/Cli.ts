@@ -10,7 +10,7 @@ class Cli {
   // TODO: update the vehicles property to accept Truck and Motorbike objects as well
   // TODO: You will need to use the Union operator to define additional types for the array
   // TODO: See the AbleToTow interface for an example of how to use the Union operator
-  vehicles: (Car)[];
+  vehicles: (Car | Truck | Motorbike)[];
   selectedVehicleVin: string | undefined;
   exit: boolean = false;
 
@@ -61,7 +61,7 @@ class Cli {
           name: 'vehicleType',
           message: 'Select a vehicle type',
           // TODO: Update the choices array to include Truck and Motorbike
-          choices: ['Car'],
+          choices: ['Car', 'Truck','Motorbike'],
         },
       ])
       .then((answers) => {
@@ -69,11 +69,11 @@ class Cli {
           // create a car
           this.createCar();
         }
-        else if (answers.vehicletype === 'Truck') {
+        else if (answers.vehicleType === 'Truck') {
           //create a Truck
           this.createTruck();
       }
-      else if (answers.vehicletype === 'Motorbike') {
+      else if (answers.vehicleType === 'Motorbike') {
           //create a Motorbike
           this.createMotorbike();
       }
