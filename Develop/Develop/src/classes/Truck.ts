@@ -85,7 +85,7 @@ class Truck extends Vehicle {
     console.log(`towing capacity: ${this.towingCapacity} lbs`);
     console.log(`Wheels: ${this.wheels}`);
     // TODO: The details should include the VIN, make, model, year, weight, top speed, color, towing capacity, and wheels
-}
+} }
 
 // Export the Truck class as the default export
 export default Truck;
